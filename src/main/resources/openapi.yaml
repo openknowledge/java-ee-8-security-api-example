@@ -1,0 +1,19 @@
+prettyPrint: true
+cacheTTL: 0
+openAPI:
+  servers:
+    - url: /${build.finalName}
+  info:
+    version: '1.0.0'
+    title: Sample API
+    description: 'Provides access to the API showcase operations'
+    contact:
+      email: kontakt@openknowledge.de
+    license:
+      name: Apache 2.0
+      url: http://www.apache.org/licenses/LICENSE-2.0.html
+  components:
+    securitySchemes:
+      BearerAuth:
+        type: http
+        scheme: bearer
